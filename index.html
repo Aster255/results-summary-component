@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <title>Frontend Mentor | Results summary component</title>
+    <script type="module" src="index.js"></script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      * {
+        font-size: 16px;
+        font-family: Hanken Grotesk;
+        src: url(assets\fonts\HankenGrotesk-VariableFont_wght.ttf);
+      }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      .breakdownrow {
+        background-color: hsla(221, 100%, 96%, 0.4);
+        padding-left: 24px;
+        padding-right: 24px;
+        height: 48px;
+        margin-top: 5px;
+        align-items: center;
+        border-radius: 10px;
+      }
+      .resultcontainer {
+        background-color: hsl(241, 81%, 54%);
+        color: white;
+      }
+      .circle {
+        background-color: #4e21ca;
+        border-radius: 50%;
+        height: 120px;
+        width: 120px;
+        justify-self: center;
+        margin: auto;
+      }
+      .result {
+        font-size: 48px;
+      }
+      .resultcontainer {
+        border-radius: 10px;
+      }
+      .great {
+        font-size: 32px;
+      }
+      .Reaction {
+        color: hsl(0, 100%, 67);
+      }
+      .Memory {
+        color: hsl(39, 100%, 56%);
+      }
+      .Verbal {
+        color: hsl(166, 100%, 37%);
+      }
+      .Visual {
+        color: hsl(234, 85%, 45%);
+      }
+      .score {
+        margin-left: auto;
+      }
+      .butainer {
+        height: 48px;
+        /* background-color: hsl(241, 100%, 89%); */
+        border-radius: 48px;
+        background-color: hsl(224, 30%, 27%);
+        color: white;
+      }
+      span {
+        color: #b0acff;
+      }
+      .btn {
+        --bs-btn-color: white !important;
+      }
+      .grey {
+        color: #b0acff;
+      }
+      /* - Light red: hsl(0, 100%, 67%)
+- Orangey yellow: hsl(39, 100%, 56%)
+- Green teal: hsl(166, 100%, 37%)
+- Cobalt blue: hsl(234, 85%, 45%) */
+    </style>
+  </head>
+  <body>
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-lg-6 text-center resultcontainer p-5">
+          <div class="grey">Your Result</div>
+          <div class="circle">
+            <div class="result"></div>
+            <div class="grey">of 100</div>
+          </div>
+          <div class="great">Great</div>
+          <div class="grey">
+            You scored higher than 65% of the people who have taken these tests.
+          </div>
+        </div>
+        <div class="col-lg-6 p-5">
+          <div class=""><b>Summary</b></div>
+          <div class="breakdown"></div>
+          <div class="butainer d-grid mt-3">
+            <button class="btn">Continue</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="https://github.com/aster255">Aster255</a>.
+    </div>
+  </body>
+</html>
